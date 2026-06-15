@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+
+    padding: 10px;
+    padding-left: 140px;
+    background-color: rgb(241, 191, 97);
+}
+
+.menu button {
+
+    background: saddlebrown;
+    border: 0;
+    box-sizing: content-box;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    line-height: inherit;
+    overflow: visible;
+    vertical-align: inherit;
+    border-radius: 20px;
+    padding: 10px 15px;
+
+}
+
+.menu button:hover {
+
+    background-color: rgb(108, 53, 14);
+}
+
+.menu button.selected {
+
+    background-color: rgb(65, 31, 7);
+
+    color: rgb(255, 255, 255);
+
+    font-weight: bold;
+}
+
+#contentFrame {
+
+    width: 100%;
+
+    height: calc(100vh - 60px);
+
+    border: none;
+}
+
+#playMusic {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    background: saddlebrown;
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 10px 15px;
+    cursor: pointer;
+
+    z-index: 1000;
+}
+
+#playMusic:hover {
+    background-color: rgb(108, 53, 14);
+}
+
+.menu-btn.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

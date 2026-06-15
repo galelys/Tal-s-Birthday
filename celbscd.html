@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Celebration!</title>
+    <link rel="stylesheet" href="celbscd.css">
+</head>
+
+<body dir="rtl">
+
+    <div class="card" onclick="toggleCard(this)">
+
+        <h2>רוצה לגלות מתי מתחילה ההרפתקה השנייה?</h2>
+
+        <h3>לחץ עליי 💚</h3>
+
+        <p class="card-text hidden">
+            📅 19/06/2026 - 10:00<br>
+            🌿 תתלבש בנוח<br>
+            ✨ תביא מצב רוח טוב וסקרנות<br>
+            ❤️ את כל השאר כבר סידרתי
+        </p>
+
+    </div>
+
+    <script>
+        function toggleCard(card) {
+            let text = card.querySelector(".card-text");
+            text.classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+
+</html>

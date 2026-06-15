@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(87, 179, 240);
+    direction: rtl;
+    text-align: right;
+
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    animation: pulse 2s infinite;
+
+}
+@keyframes pulse {
+
+    0%   { transform: scale(1); }
+
+    50%  { transform: scale(1.05); }
+
+    100% { transform: scale(1); }
+
+}
+
+p {
+    white-space: pre-line;
+    line-height: 1.8;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+}
